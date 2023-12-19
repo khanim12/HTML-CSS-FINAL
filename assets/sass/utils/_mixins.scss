@@ -1,0 +1,21 @@
+@mixin flexBox($align,$justify,$gap, $direction){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    gap: $gap;
+    flex-direction: $direction;
+}
+@mixin btn($bgcolor,$color, $padding,$border-radius:90px,$border:none){
+    border: $border;
+    background-color: $bgcolor;
+    color: $color;
+    padding: $padding;
+    font-size:24px;
+    font-weight:600;
+    border-radius: $border-radius;
+}
+@mixin typo($font-wh,$fz,$color){
+    font-weight: $font-wh;
+    font-size: $fz;
+    color: $color;
+}

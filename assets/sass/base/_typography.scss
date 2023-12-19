@@ -1,0 +1,25 @@
+
+h3{
+    @include typo(500,32px,$colorFFF);
+    letter-spacing: 0.157px;
+}
+h4{
+    @include typo(600,28px,$colorFFF);
+    letter-spacing: 0.56px;
+
+}
+.h4-colorBlack{
+    @include typo(600,28px,black);
+    letter-spacing: 0.56px;
+  
+}
+.nav-link
+{
+    a{
+        @include typo(500,22px,$color807D7E);
+    }
+    #active{
+        @include typo(700,22px,$color3C4242);
+  
+    }
+}

@@ -1,0 +1,119 @@
+.carousel-container {
+  .carousel-inner {
+    position: relative;
+  }
+
+  .carousel-caption {
+    position: absolute;
+    top: 90px;
+    left: 190px;
+    width: 40%;
+    text-align: left;
+
+    h1 {
+      font-size: 78px;
+      font-weight: 800;
+      letter-spacing: 0.3px;
+      margin: $m2 auto;
+    }
+  }
+}
+.under-carousel {
+  width: 85%;
+  margin: $m5 auto $m1;
+  &-cards {
+    @include flexBox(center, center, 45px, row);
+  }
+  &-card {
+    width: 50%;
+    height: 500px;
+    border-radius: 16px;
+    text-align: left;
+    padding: $p3;
+    a {
+      color: 20px;
+      font-weight: 800;
+      color: $colorFFF;
+      border-bottom: 1px solid $colorFFF;
+      padding-bottom: 3px;
+    }
+    p {
+      letter-spacing: 0.251px;
+      color: $colorFFF;
+    }
+    p:first-of-type {
+      font-size: 18px;
+      font-weight: 800;
+    }
+    p:last-of-type {
+      font-size: 16px;
+      font-weight: 500;
+      margin: $m1 auto $m3;
+    }
+  }
+}
+.arrival-container {
+  width: 85%;
+  margin: auto;
+  &-head {
+    @include flexBox(center, start, 25px, row);
+    margin-bottom: $m3;
+    h3 {
+      color: black;
+    }
+  }
+  &-cards {
+    @include flexBox(center, space-between, 10px, row);
+  }
+  &-card {
+    p {
+      font-size: 20px;
+      letter-spacing: 0.2px;
+      font-weight: 700;
+      color: $color3C4242;
+      margin-top: $m1;
+    }
+  }
+}
+.zone-container {
+  width: 85%;
+  margin: $m3 auto;
+  &-head {
+    @include flexBox(center, start, 25px, row);
+    margin-bottom: $m3;
+    h3 {
+      color: black;
+    }
+  }
+//   &-cards {
+//   }
+.card {
+    background-repeat: no-repeat;
+    width: 100%;
+    
+    &:nth-of-type(1) {
+      background-image: url(/assets/images/Rectangle\ 74.png);
+      margin-top: $p1;
+
+    }
+    &:nth-of-type(2) {
+        background-image: url(/assets/images/Rectangle\ 75.png);
+
+    }
+    &:nth-of-type(3) {
+        background-image: url(/assets/images/Rectangle\ 76.png);
+
+
+    } &:nth-of-type(4) {
+        background-image: url(/assets/images/Rectangle\ 77.png);
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+
+    } &:nth-of-type(5) {
+        background-image: url(/assets/images/Rectangle\ 78.png);
+
+    }
+  }
+
+}

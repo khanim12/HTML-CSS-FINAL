@@ -1,0 +1,4 @@
+.btn-white{
+    @include btn($colorFFF,black, 16px 72px,8px);
+    margin-top: $m2;
+}
