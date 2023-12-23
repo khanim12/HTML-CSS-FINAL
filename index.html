@@ -1,288 +1,822 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
 
-
-    <link rel="stylesheet" href="assets/sass/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="assets/sass/style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="nav-logo">
-                <img src="assets/images/Logo (13).png" alt="">
-            </div>
-            <div class="nav-link">
-                <ul>
-                    <li><a id="active" href="">Shop</a></li>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="">Women</a></li>
-                    <li><a href="">Combos</a></li>
-                    <li><a href="">Joggers</a></li>
-                </ul>
-            </div>
-            <div class="nav-search">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <input type="search" placeholder="Search">
-            </div>
-            <div class="nav-icons">
-                <img src="assets/images/Component 1.png" alt="">
-                <img src="assets/images/Component 2.png" alt="">
-                <img src="assets/images/Component 3.png" alt="">
-
-            </div>
-        </nav>
+      <nav>
+        <div class="nav-logo">
+          <img src="assets/images/Logo (13).png" alt="" />
+        </div>
+        <div class="nav-link">
+          <ul>
+            <li><a id="active" href="">Shop</a></li>
+            <li><a href="#men">Men</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="">Combos</a></li>
+            <li><a href="">Joggers</a></li>
+          </ul>
+        </div>
+        <div class="nav-search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search" />
+        </div>
+        <div class="nav-icons">
+          <img src="assets/images/Component 1.png" alt="" />
+          <a href="signUp.html">      
+                <img src="assets/images/Component 2.png" alt="" />
+          </a>
+          <img src="assets/images/Component 3.png" alt="" />
+        </div>
+      </nav>
     </header>
     <main>
-        <section>
-
-            <div class="carousel-container">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      
+      <section>
+        <div class="carousel-container">
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="assets/images/shop-hero-1-product-slide-1.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>T-shirt / Tops</h3>
+                  <h1>Summer Value Pack</h1>
+                  <h3>cool / colorful / comfy</h3>
+                  <button class="btn-white">Shop Now</button>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="assets/images/shop-hero-1-product-slide-1.jpg"
+                  class="d-block w-100"
+                  style="
+                    height: 700px;
+                    object-fit: cover;
+                    object-position: center;
+                  "
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h3>T-shirt / Tops</h3>
+                  <h1>Summer Value Pack</h1>
+                  <h3>cool / colorful / comfy</h3>
+                  <button class="btn-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="under-carousel">
+          <div class="under-carousel-cards">
+            <div
+              class="under-carousel-card"
+              style="
+                background-image: url(assets/images/unsplash_Qyc13QBGaM4.jpg);
+                background-repeat: no-repeat;
+              "
+            >
+              <p>Low Price</p>
+              <h3>High Coziness</h3>
+              <p>UPTO 50% OFF</p>
+              <a href="">Explore Items</a>
+            </div>
+            <div class="under-carousel-card" style="background-image: url(assets/images/unsplash_Qyc13QBGaM4\ \(1\).jpg);background-repeat: no-repeat;">
+              <p>Beyoung Presents</p>
+              <h3>Breezy Summer Style</h3>
+              <p>UPTO 50% OFF</p>
+              <a href="">Explore Items</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="arrival-container">
+          <div class="head">
+            <img src="assets/images/Rectangle 21.png" alt="" />
+            <h3>New Arrival</h3>
+          </div>
+          <div class="arrival-container-cards">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="14"
+              viewBox="0 0 16 14"
+              fill="none"
+            >
+              <path
+                d="M14.5857 7L1.58569 7M6.58569 13L1.2928 7.70711C0.902277 7.31658 0.902277 6.68342 1.2928 6.29289L6.58569 0.999999"
+                stroke="#3C4242"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+            <div class="arrival-container-card">
+              <img
+                src="assets/images/photographer-white-background.png"
+                alt=""
+              />
+              <p>Knitted Joggers</p>
+            </div>
+            <div class="arrival-container-card">
+              <img src="assets/images/Rectangle 28.png" alt="" />
+              <p>Full Sleeve</p>
+            </div>
+            <div class="arrival-container-card">
+              <img src="assets/images/Rectangle 28 (1).png" alt="" />
+              <p>Active T-Shirts</p>
+            </div>
+            <div class="arrival-container-card">
+              <img src="assets/images/Rectangle 28 (2).png" alt="" />
+              <p>Urban Shirts</p>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="14"
+              viewBox="0 0 16 14"
+              fill="none"
+            >
+              <path
+                d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13"
+                stroke="#3C4242"
+                stroke-width="1.6"
+                stroke-linecap="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="zone-container">
+          <div class="head">
+            <img src="assets/images/Rectangle 21.png" alt="" />
+            <h3>Big Saving Zone</h3>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card card1">
+                  <div class="texts1">
+                    <h4>Hawaiian Shirts</h4>
+                    <p>Dress up in summer vibe</p>
+                    <p>UPTO 50% OFF</p>
+                    <div class="icons">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="26"
+                        viewBox="0 0 23 26"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <button class="button-white">shop now</button>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="assets/images/shop-hero-1-product-slide-1.jpg" class="d-block w-100" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h3>T-shirt / Tops </h3>
-                          <h1>Summer 
-                            Value Pack</h1>
-                            <h3>cool / colorful / comfy</h3>
-                            <button class="btn-white">Shop Now</button>
-                        </div>
-                      </div>
-                      <div class="carousel-item">
-                        <img src="assets/images/shop-hero-1-product-slide-1.jpg" class="d-block w-100" style="height: 700px; object-fit: cover; object-position: center;" alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h3>T-shirt / Tops </h3>
-                          <h1>Summer 
-                            Value Pack</h1>
-                            <h3>cool / colorful / comfy</h3>
-                            <button class="btn-white">Shop Now</button>
-                        </div>
-                      </div>
-                     
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
                   </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card2">
+                  <div class="texts texts2">
+                    <button class="dark">Limited Stock</button>
+                    <h4>Printed T-Shirt</h4>
+                    <p>New Designs Every Week</p>
+                    <p>UPTO 40% OFF</p>
+                    <div class="icons">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="23"
+                        height="26"
+                        viewBox="0 0 23 26"
+                        fill="none"
+                      >
+                        <path
+                          d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <button class="button-white">shop now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card card3">
+                  <div class="texts">
+                    <h4>Cargo Joggers</h4>
+                    <p>Move with style & comfort</p>
+                    <p>UPTO 50% OFF</p>
+                    <div class="icons">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" viewBox="0 0 23 27" fill="none">
+  <path d="M11.5678 1.61938L11.5678 24.2225M22 15.529L12.7972 24.7318C12.1182 25.4108 11.0173 25.4108 10.3383 24.7318L1.13557 15.529" stroke="#3C4242" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                      <button class="button-dark">shop now</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section>
-          <div class="under-carousel">
-            <div class="under-carousel-cards">
-              <div class="under-carousel-card" style="background-image: url(assets/images/unsplash_Qyc13QBGaM4.jpg); background-repeat: no-repeat;">
-                <p>Low Price</p>
-                <h3>High Coziness</h3>
-                <p>UPTO 50% OFF</p>
-                <a href="">Explore Items</a>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card card4">
+                  <div class="texts">
+                    <h4>Urban Shirts</h4>
+                    <p>Live in confort</p>
+                    <p>FLAT 60% OFF</p>
+                    <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" viewBox="0 0 23 27" fill="none">
+  <path d="M11.5678 1.61938L11.5678 24.2225M22 15.529L12.7972 24.7318C12.1182 25.4108 11.0173 25.4108 10.3383 24.7318L1.13557 15.529" stroke="#3C4242" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                      <button class="button-dark">shop now</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="under-carousel-card" style="background-image: url(assets/images/unsplash_Qyc13QBGaM4\ \(1\).jpg);background-repeat: no-repeat;">
-                <p>Beyoung Presents</p>
-                <h3>Breezy Summer
-                  Style</h3>
-                <p>UPTO 50% OFF</p>
-                <a href="">Explore Items</a>
+              <div class="col-md-6">
+                <div class="card card5">
+                  <div class="texts">
+                  <h4>Oversized T-Shirts</h4>
+                  <p>Street Style Icon</p>
+                  <p>FLAT 40% OFF</p>
+                  <div class="icons">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="27" viewBox="0 0 23 27" fill="none">
+  <path d="M11.5678 1.61938L11.5678 24.2225M22 15.529L12.7972 24.7318C12.1182 25.4108 11.0173 25.4108 10.3383 24.7318L1.13557 15.529" stroke="#3C4242" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                  <button class="button-dark">shop now</button>
+          
+            
               </div>
+          
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="group-container">
+          <div class="group-container-left">
+            <img src="assets/images/unsplash_bBiuSdck8tU.png" alt="">
+            <div class="group-container-left-texts">
+              <h3>WE MADE YOUR EVERYDAY FASHION BETTER!</h3>
+              <p>In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range - Comfortable & Affordable fashion 24/7</p>
+              <button class="btn-white">shop now</button>
             </div>
           </div>
-        </section>
-        <section>
-          <div class="arrival-container">
-            <div class="arrival-container-head">
-              <img src="assets/images/Rectangle 21.png" alt="">
-              <h3>New Arrival</h3>
-            </div>
-            <div class="arrival-container-cards">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                <path d="M14.5857 7L1.58569 7M6.58569 13L1.2928 7.70711C0.902277 7.31658 0.902277 6.68342 1.2928 6.29289L6.58569 0.999999" stroke="#3C4242" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-              <div class="arrival-container-card">
-
-                <img src="assets/images/photographer-white-background.png" alt="">
-                <p>Knitted Joggers</p>
-              </div>
-              <div class="arrival-container-card">
-                <img src="assets/images/Rectangle 28.png" alt="">
-                <p>Full Sleeve</p>
-              </div><div class="arrival-container-card">
-                <img src="assets/images/Rectangle 28 (1).png" alt="">
-                <p>Active T-Shirts </p>
-              </div><div class="arrival-container-card">
-                <img src="assets/images/Rectangle 28 (2).png" alt="">
-                <p>Urban Shirts </p>
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                <path d="M1 7H14M9 1L14.2929 6.29289C14.6834 6.68342 14.6834 7.31658 14.2929 7.70711L9 13" stroke="#3C4242" stroke-width="1.6" stroke-linecap="round"/>
-              </svg>
-            </div>
-
+          <div class="group-container-right">
+            <img src="assets/images/Rectangle 13.png" alt="">
           </div>
-        </section>
-        <section>
-          <div class="zone-container">
-            <div class="zone-container-head">
+        </div>
+      </section>
+      <section>
+        <div id="men" class="men-container">
+          <div class="head">
+            <img src="assets/images/Rectangle 21.png" alt="">
+            <h3>Categories For Men</h3>
+          </div>
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-3">
+                <div class="card">
+                <img src="assets/images/Rectangle 20 (1).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Shirts</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+                </div>
+              </div>
+
+              </div>
+              <div class="col-md-3 "> 
+                <div class="card">
+
+                    <img src="assets/images/Rectangle 21 (1).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Printed T-Shirts</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+                </div>
+              </div>                </div>
+
+              <div class="col-md-3">    
+                <div class="card">
+
+                  <img src="assets/images/Rectangle 22.png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Plain T-Shirts</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+                </div></div>                </div>
+
+              <div class="col-md-3"> 
+                <div class="card">
+
+                  <img src="assets/images/Rectangle 22 (1).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Polo T-Shirts</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+                </div></div>
+            </div>                </div>
+
+            <div class="row">
+              <div class="col-md-3">  
+                <div class="card">
+
+                  <img src="assets/images/Rectangle 20 (2).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Hoodies & Sweetshirt</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+                </div></div>
+              </div>
+
+              <div class="col-md-3"> 
+                <div class="card">
+
+                  <img src="assets/images/Rectangle 21 (2).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Jeans</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+                </div></div>
+              </div>
+
+              <div class="col-md-3">  
+                <div class="card">
+                  <img src="assets/images/Rectangle 22 (2).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Activewear</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+              </div>
+
+                </div></div>
+              <div class="col-md-3">                   <div class="card">
+                <img src="assets/images/Rectangle 22 (3).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Boxers</h5>
+                  <p>Explore Now!</p>
+                </div>
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                    <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                  </svg>
+                </div>
+              </div>
+
+                </div></div>
+            </div>
+
+        </div>
+      </section>
+      <section>
+        <div class="women-container">
+         
+            <div class="head">
               <img src="assets/images/Rectangle 21.png" alt="">
-              <h3>Big Saving Zone </h3>
+              <h3>Categories For Women</h3>
             </div>
             <div class="container">
-              <div class="row">
-                <div class="col-md-4">
+              <div class="row ">
+                <div class="col-md-3">
                   <div class="card">
-                    <h4>Hawaiian
-                      Shirts</h4>
-                      <p>Dress up in summer vibe</p>
-                      <p>UPTO 50% OFF</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                        <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                      <button class="button-white">
-                        shop now
-                      </button>
-                  </div>  
+                  <img src="assets/images/Rectangle 20 (3).png" alt="">
+                  <div class="text">
+                    <div class="texts">
+                    <h5>Hoodies & Sweetshirt</h5>
+                    <p>Explore Now!</p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                      <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                    </svg>
+                  </div>
+                  </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <h4>Hawaiian
-                      Shirts</h4>
-                      <p>Dress up in summer vibe</p>
-                      <p>UPTO 50% OFF</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                        <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                      <button class="button-white">
-                        shop now
-                      </button>
-                  </div>  
+  
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3 "> 
                   <div class="card">
-                    <h4>Hawaiian
-                      Shirts</h4>
-                      <p>Dress up in summer vibe</p>
-                      <p>UPTO 50% OFF</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                        <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                      <button class="button-white">
-                        shop now
-                      </button>
-                  </div>  
+  
+                      <img src="assets/images/Rectangle 21 (3).png" alt="">
+                  <div class="text">
+                    <div class="texts">
+                    <h5>Coats & Parkas</h5>
+                    <p>Explore Now!</p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                      <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                    </svg>
+                  </div>
+                  </div>
+                </div>                </div>
+  
+                <div class="col-md-3">    
+                  <div class="card">
+  
+                    <img src="assets/images/Rectangle 22 (4).png" alt="">
+                  <div class="text">
+                    <div class="texts">
+                    <h5>Tees & T-Shirt</h5>
+                    <p>Explore Now!</p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                      <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                    </svg>
+                  </div>
+                  </div></div>                </div>
+  
+                <div class="col-md-3"> 
+                  <div class="card">
+  
+                    <img src="assets/images/Rectangle 22 (5).png" alt="">
+                  <div class="text">
+                    <div class="texts">
+                    <h5>Boxers</h5>
+                    <p>Explore Now!</p>
+                  </div>
+                  <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+                      <path d="M18.9571 7.71798C19.2843 7.39075 19.2843 6.86022 18.9571 6.533L13.6247 1.20059C13.2975 0.873368 12.7669 0.873368 12.4397 1.20059C12.1125 1.52781 12.1125 2.05835 12.4397 2.38557L17.1796 7.12549L12.4397 11.8654C12.1125 12.1926 12.1125 12.7232 12.4397 13.0504C12.7669 13.3776 13.2975 13.3776 13.6247 13.0504L18.9571 7.71798ZM0.489258 7.9634L18.3646 7.9634V6.28758L0.489258 6.28758L0.489258 7.9634Z" fill="#797979"/>
+                    </svg>
+                  </div>
+                  </div></div>
+              </div> 
+                           </div>
+        </div>
+      </section>
+      <section>
+        <div class="brand-container">
+          <div class="brand-container-head">
+          <h2>Top Brands Deal</h2>
+          <p>Up To <span>60%</span> off on brands</p>
+        </div>
+        <div class="brand-container-photos">
+          <div><img src="assets/images/image 7.png" alt=""></div>
+          <div><img src="assets/images/image 18.png" alt=""></div>
+          <div><img src="assets/images/image 19.png" alt=""></div>
+          <div><img src="assets/images/image 20.png" alt=""></div>
+          <div><img src="assets/images/image 21.png" alt=""></div>
+
+        </div>
+        </div>
+      </section>
+      <section>
+        <div class="lime-container">
+          <div class="head">
+            <img src="assets/images/Rectangle 21.png" alt="">
+            <h3>In The Limelight </h3>
+          </div>
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="heart">
+                    <img src="assets/images/Frame 49.png" alt="">
+                  </div>
+                <img src="assets/images/Rectangle 25 (1).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Black Sweatshirt with ....</h5>
+                  <p>Jhanvi’s  Brand</p>
+                </div>
+                <div class="icon">
+               <p class="price">
+                $123.00
+               </p>
+                </div>
                 </div>
               </div>
-              <div class="row">
+
+              </div>
+
+                   <div class="col-md-3">
+                <div class="card">
+                  <div class="heart">
+                    <img src="assets/images/Frame 49.png" alt="">
+                  </div>
+                <img src="assets/images/Rectangle 25 (2).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>line Pattern Black H...</h5>
+                  <p>AS brand</p>
+                </div>
+                <div class="icon">
+               <p class="price">
+                $123.00
+               </p>
+                </div>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="heart">
+                    <img src="assets/images/Frame 49.png" alt="">
+                  </div>
+                <img src="assets/images/Rectangle 25 (3).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5>Black Shorts</h5>
+                  <p>MM’s  Brand!</p>
+                </div>
+                <div class="icon">
+               <p class="price">
+                $123.00
+               </p>
+                </div>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="col-md-3">
+                <div class="card">
+                  <div class="heart">
+                    <img src="assets/images/Frame 49.png" alt="">
+                  </div>
+                <img src="assets/images/Rectangle 25 (4).png" alt="">
+                <div class="text">
+                  <div class="texts">
+                  <h5> Levender Hoodie with ....</h5>
+                  <p> Nike's brand</p>
+                </div>
+                <div class="icon">
+               <p class="price">
+                $123.00
+               </p>
+                </div>
+                </div>
+              </div>
+
+              </div>
+                         </div>
+      </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="feedback-container">
+          <div class="head">
+            <img src="assets/images/Rectangle 21.png" alt="">
+            <h3>In The Limelight </h3>
+          </div>
+          <div class="container">
+            <div class="row ">
+      
+                   <div class="col-md-4">
+                <div class="card">
+                   <div class="card-head">
+                    <div class="image">
+                      <img src="assets/images/Rectangle 729.png" alt="">
+                    </div>
+                    <div class="stars">
+                      <img src="assets/images/Frame 260.png" alt="">
+                    </div>
+                   </div>
+                   <div class="card-texts">
+                    <h5>Floyd Miles</h5>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                   </div>
+              </div>
+              </div>
+           
+              <div class="col-md-4">
+                <div class="card">
+                   <div class="card-head">
+                    <div class="image">
+                      <img src="assets/images/Rectangle 729 (1).png" alt="">
+                    </div>
+                    <div class="stars">
+                      <img src="assets/images/Frame 260 (1).png" alt="">
+                    </div>
+                   </div>
+                   <div class="card-texts">
+                    <h5>Ronald Richards </h5>
+                    <p>ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                   </div>
+              </div>
+              </div>
+       
+              <div class="col-md-4">
+                <div class="card">
+                   <div class="card-head">
+                    <div class="image">
+                      <img src="assets/images/Rectangle 729 (2).png" alt="">
+                    </div>
+                    <div class="stars">
+                      <img src="assets/images/Frame 260.png" alt="">
+                    </div>
+                   </div>
+                   <div class="card-texts">
+                    <h5>Savannah Nguyen </h5>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+                      Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                   </div>
+              </div>
+              </div>
+                         </div>
+      </div>
+          </div>
+      </section>
+    </main>
+   <footer>
+      <div class="footer-container">
+        <div class="footer-container-head">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <ul>
+                  <p>Need Help</p>
+                  <li>Contact Us</li>
+                  <li>Track Order</li>
+                  <li>FAQ's</li>
+                  <li>Returns & Refunds</li>
+                  <li>Career</li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                
+                <ul>
+                  <p> Company</p>
+                  <li>About Us</li>
+                  <li>euphoria Blog</li>
+                  <li>euphoriastan</li>
+                  <li>Collaboration</li>
+                  <li>Media</li>
+                </ul>
+              </div> <div class="col-md-3">
+            
+                <ul>
+                  
+
+<p>More Info</p>
+
+                  <li> Term and Conditions</li>
+                  <li>Privacy & Policy</li>
+                  <li>Shipping Policy</li>
+                  <li>Site Map</li>
+                </ul>
+              </div> <div class="col-md-3">
                
-                <div class="col-md-6">
-                  <div class="card">
-                    <h4>Hawaiian
-                      Shirts</h4>
-                      <p>Dress up in summer vibe</p>
-                      <p>UPTO 50% OFF</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                        <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                      <button class="button-white">
-                        shop now
-                      </button>
-                  </div>  
-                </div>
-                <div class="col-md-6">
-                  <div class="card">
-                    <h4>Hawaiian
-                      Shirts</h4>
-                      <p>Dress up in summer vibe</p>
-                      <p>UPTO 50% OFF</p>
-                      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                        <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                      <button class="button-white">
-                        shop now
-                      </button>
-                  </div>  
-                </div>
+                <ul>
+                  <p>Location</p>
+                  <li>support@euphoria.in</li>
+                  <li>Eklingpura Chouraha, Ahmedabad Main Road</li>
+                  <li>(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</li>
+                
+                </ul>
               </div>
             </div>
-            <!-- <div class="zone-container-cards">
-              <div class="zone-container-card">
-                <h4>Hawaiian
-                  Shirts</h4>
-                  <p>Dress up in summer vibe</p>
-                  <p>UPTO 50% OFF</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                    <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                  </svg>
-                  <button class="button-white">
-                    shop now
-                  </button>
-              </div>
-              <div class="zone-container-card">
-                <h4>Hawaiian
-                  Shirts</h4>
-                  <p>Dress up in summer vibe</p>
-                  <p>UPTO 50% OFF</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                    <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                  </svg>
-                  <button class="button-white">
-                    shop now
-                  </button>
-              </div>   <div class="zone-container-card">
-                <h4>Hawaiian
-                  Shirts</h4>
-                  <p>Dress up in summer vibe</p>
-                  <p>UPTO 50% OFF</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                    <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                  </svg>
-                  <button class="button-white">
-                    shop now
-                  </button>
-              </div>   <div class="zone-container-card">
-                <h4>Hawaiian
-                  Shirts</h4>
-                  <p>Dress up in summer vibe</p>
-                  <p>UPTO 50% OFF</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                    <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                  </svg>
-                  <button class="button-white">
-                    shop now
-                  </button>
-              </div>   <div class="zone-container-card">
-                <h4>Hawaiian
-                  Shirts</h4>
-                  <p>Dress up in summer vibe</p>
-                  <p>UPTO 50% OFF</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="23" height="26" viewBox="0 0 23 26" fill="none">
-                    <path d="M11.5678 1.28613L11.5678 23.8893M22 15.1958L12.7972 24.3985C12.1182 25.0775 11.0173 25.0775 10.3383 24.3985L1.13557 15.1958" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                  </svg>
-                  <button class="button-white">
-                    shop now
-                  </button>
-              </div>
-            </div> -->
           </div>
-        </section>
-        <section>
-          <div class="
-          ">
-
+      </div>
+      <div class="footer-container-app">
+        <div class="footer-container-app-img">
+          <img src="assets/images/Frame 18.png" alt="">
+        </div>
+        <div class="footer-container-app-right">
+          <h5>Download The App </h5>
+          <div class="footer-container-app-right-app">
+            <div><img src="assets/images/Group.png" alt=""></div>
+            <div><img src="assets/images/Group (1).png" alt=""></div>
           </div>
-        </section>
-    </main>
-</body>
+        </div>
+      </div>
+      <div class="footer-container-border">
+        <h5>Popular Categories</h5>
+        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="11" viewBox="0 0 21 11" fill="none">
+          <path d="M1.814 1.75049L9.30837 9.14195C9.86133 9.68731 10.7578 9.68731 11.3108 9.14195L18.8052 1.75049" stroke="#F6F6F6" stroke-width="2.88" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="footer-container-end">
+        <p>Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  </body>
 </html>

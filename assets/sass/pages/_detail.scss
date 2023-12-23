@@ -1,0 +1,286 @@
+.select-container {
+  height: 100%;
+  .container {
+    height: 100%;
+    .card-right {
+      width: 90%;
+      margin-left: $m2;
+    }
+
+    .card {
+      border: none;
+      &-icon {
+        @include flexBox(center, start, 15px, row);
+        p {
+          color: $color807D7E;
+          font-size: 18px;
+          font-weight: 500;
+          text-transform: capitalize;
+          margin-top: 12px;
+        }
+      }
+      &-comments {
+        margin: $m2 0;
+        @include flexBox(center, start, 40px, row);
+        span {
+          margin-left: 10px;
+          font-size: 18px;
+          font-weight: 500;
+          color: $color807D7E;
+        }
+      }
+      &-sizes {
+        .select {
+          margin-right: 25px;
+          color: #3f4646;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .guide {
+          margin-right: 10px;
+          color: $color807D7E;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+      &-SizeBox {
+        margin: $m2 0;
+        span {
+          border-radius: 12px;
+          border: 1.5px solid #bebcbd;
+          width: 38px;
+          height: 38px;
+          margin-right: 20px;
+          padding: 8px 15px;
+        }
+        .dark {
+          background-color: black;
+          color: #ffff;
+          border: none;
+        }
+      }
+      &-color {
+        margin: $m1 0 $m2;
+        p {
+          color: #3f4646;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        svg {
+          margin-right: 20px;
+        }
+      }
+      &-buttons {
+        border-bottom: 1px solid $colorBEBCBD;
+        padding-bottom: $p4;
+        @include flexBox(center, start, 25px, row);
+        svg {
+          margin-right: 5px;
+        }
+      }
+      &-bottom {
+        @include flexBox(center, space-between, 10px, row);
+        .group {
+          margin: $m2 0 $m1;
+          @include flexBox(center, start, 10px, row);
+          span {
+            color: #3c4242;
+            font-size: 18px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}
+.product-description {
+  width: 85%;
+  margin: $m5 auto;
+  .card-left{
+    width: 100%;
+  }
+  .card-right{
+    margin-left: 100px;
+    .card-image{
+      width:100%;
+      height: 100%;
+    }
+    img{
+      width: 100%;
+      border-radius: 12px;
+      height: 100%;
+    }
+  }
+  .card {
+    border: none;
+    &-head {
+      span {
+        color: #807d7e;
+        font-size: 18px;
+        font-weight: 400;
+        margin-right: 8px;
+      }
+      @include flexBox(start, start, 20px, row);
+      .border-bt {
+        span {
+          color: #3c4242;
+          font-size: 18px;
+          font-weight: 500;
+          display: block;
+          margin-bottom: 15px;
+        }
+        .line {
+          width: 43px;
+          height: 2px;
+          background-color: black;
+        }
+      }
+      .comment {
+        .num {
+          width: 20px;
+          height: 20px;
+          border-radius: 4px;
+          background: #8a33fd;
+          width: 9px;
+          height: 12px;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 500;
+          padding: 5px 7px;
+        }
+      }
+      .question {
+        .num {
+          border-radius: 4px;
+          background: black;
+          width: 9px;
+          height: 12px;
+          color: #fff;
+          font-size: 10px;
+          font-weight: 500;
+          padding: 5px 7px;
+        }
+      }
+    }
+    .center {
+      color: #807d7e;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.32px;
+      margin: $m2 0;
+      line-height: 25px;
+    }
+    &-table{
+      border-radius: 12px;
+background: #F6F6F6;
+padding: 10px 30px;
+      .card{
+        background: #F6F6F6;
+        padding: 5px;
+
+span{
+  color: #807D7E;
+font-size: 16px;
+font-weight: 400;
+line-height: 16px; /* 100% */
+letter-spacing: 0.32px;
+
+}
+p{
+  color: #3C4242;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px; /* 100% */
+letter-spacing: 0.32px;
+padding: 10px 0;
+padding-right: 10px;
+}
+      }
+    }
+    &-right{
+.card-image{
+  position: relative;
+&::before{
+  content: "";
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  top: 0;
+  left: 0;
+height: 100%;}
+}
+p{
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #FFF;
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 0.36px;
+}
+svg{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50% , -50%);
+}
+h5{
+  position: absolute;
+  bottom: 100px;
+  right: 10px;
+  color: #FFF;
+font-size: 22px;
+font-weight: 500;
+letter-spacing: 0.44px;
+opacity: 1;
+}
+    }
+  }
+
+}
+.similar-container {
+  width: 85%;
+  margin:$m3 auto;
+  .card {
+    border: none;
+    margin-right: 10px;
+    position: relative;
+    height: 100%;
+    img{
+      width: 100%;
+      height: 100%;
+object-position: left;
+object-fit: cover;
+    }
+    .heart{
+      position: absolute;
+      top: 20px;
+      right: 20px
+    }
+  }
+  .text {
+    @include flexBox(start, space-between, 0px, row);
+    margin: $m1 0 $m2;
+    .price{
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background-color: $colorF6F6F6;
+      color: $color3C4242;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.715px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: -0.536px;
+      color: #7f7f7f;
+      font-weight: 500;
+    }
+  }
+}

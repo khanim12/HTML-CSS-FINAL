@@ -85,35 +85,321 @@
       color: black;
     }
   }
-//   &-cards {
-//   }
-.card {
+  //   &-cards {
+  //   }
+  .card {
     background-repeat: no-repeat;
     width: 100%;
-    
-    &:nth-of-type(1) {
-      background-image: url(/assets/images/Rectangle\ 74.png);
-      margin-top: $p1;
-
+    text-align: left;
+    padding: $p3 $p1;
+    margin-top: $m2;
+    height: 100%;
+  }
+  .texts {
+    width: 58%;
+    margin-left: auto;
+    .icons {
+      @include flexBox(end, center, 10px, column);
+      svg {
+        // margin-right: 50px;
+        margin: $m1 50px $m1 0;
+      }
     }
-    &:nth-of-type(2) {
-        background-image: url(/assets/images/Rectangle\ 75.png);
-
+  }
+  .texts2 {
+    position: relative;
+    .dark {
+      position: absolute;
+      top: -40px;
+      right: 20px;
     }
-    &:nth-of-type(3) {
-        background-image: url(/assets/images/Rectangle\ 76.png);
-
-
-    } &:nth-of-type(4) {
-        background-image: url(/assets/images/Rectangle\ 77.png);
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-
-    } &:nth-of-type(5) {
-        background-image: url(/assets/images/Rectangle\ 78.png);
-
+  }
+  .texts1 {
+    width: 60%;
+    margin-right: auto;
+    .icons {
+      @include flexBox(end, center, 10px, column);
+      margin-right: 20px;
+      svg {
+        margin-right: 110px;
+      }
+    }
+  }
+  .card {
+    border: none;
+    border-radius: 8px;
+  }
+  .card1 {
+    background-image: url(/assets/images/Rectangle\ 74.png);
+    p:first-of-type {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: $m1;
+      color: $colorFFF;
+    }
+    p:last-of-type {
+      font-size: 18px;
+      font-weight: 700;
+      color: $colorFFF;
     }
   }
 
+  .card2 {
+    background-image: url(/assets/images/Rectangle\ 75.png);
+    text-align: right;
+    p:first-of-type {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: $m1;
+      color: $colorFFF;
+    }
+    p:last-of-type {
+      font-size: 18px;
+      font-weight: 700;
+      color: $colorFFF;
+    }
+  }
+  .card3 {
+    background-image: url(/assets/images/Rectangle\ 76.png);
+    text-align: right;
+    h4 {
+      color: black;
+    }
+
+    p:first-of-type {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: $m1;
+      color: black;
+    }
+    p:last-of-type {
+      font-size: 18px;
+      font-weight: 700;
+      color: black;
+    }
+  }
+  .card4 {
+    background-image: url(/assets/images/Rectangle\ 77.png);
+    text-align: right;
+    .texts {
+      width: 40%;
+      margin-right: 70px;
+    }
+    h4 {
+      color: black;
+    }
+
+    p:first-of-type {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: $m1;
+      color: black;
+    }
+    p:last-of-type {
+      font-size: 18px;
+      font-weight: 700;
+      color: black;
+    }
+  }
+  .card5 {
+    background-image: url(/assets/images/Rectangle\ 78.png);
+    text-align: right;
+    .texts {
+      width: 50%;
+      margin-right: 50px;
+    }
+    h4 {
+      color: black;
+    }
+
+    p:first-of-type {
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: $m1;
+      color: black;
+    }
+    p:last-of-type {
+      font-size: 18px;
+      font-weight: 700;
+      color: black;
+    }
+  }
 }
+.group-container {
+  width: 85%;
+  margin: 150px auto;
+  @include flexBox(center, center, 0px, row);
+  &-left {
+    position: relative;
+    &-texts {
+      position: absolute;
+      width: 70%;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+      p {
+        color: $colorFFF;
+        font-size: 20px;
+        font-weight: 300;
+      }
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+.men-container {
+  width: 85%;
+  margin: auto;
+
+  .card {
+    border: none;
+    margin-right: 10px;
+  }
+  .text {
+    @include flexBox(start, space-between, 0px, row);
+    margin: $m1 0 $m2;
+    h5 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.715px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: -0.536px;
+      color: #7f7f7f;
+      font-weight: 500;
+    }
+  }
+}
+
+.women-container {
+  width: 85%;
+  margin: auto;
+  .card {
+    border: none;
+    margin-right: 10px;
+  }
+  .text {
+    @include flexBox(start, space-between, 0px, row);
+    margin: $m1 0 $m2;
+    h5 {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.715px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: -0.536px;
+      color: #7f7f7f;
+      font-weight: 500;
+    }
+  }
+}
+.brand-container {
+  width: 85%;
+  margin: $m1 auto;
+  padding: $p3 0;
+  background-color: $color3C4242;
+  &-head {
+    text-align: center;
+    padding-top: $p2;
+    color: $colorFFF;
+    h2 {
+      font-size: 50px;
+      font-weight: 800;
+      margin-bottom: $m2;
+    }
+    p{
+      font-size: 22px;
+      font-weight: 500;
+      span{
+        color: #FBD103;
+        font-weight: 700;
+      }
+    }
+  }
+  &-photos{
+    @include flexBox(center,center,25px,row);
+    margin: $m3 0;
+    div{
+      background-color: $colorFFF;
+      padding: 8px 24px;
+      border-radius: 8px;
+      height: 100%;
+      img{
+        width: 100%;
+      }
+    }
+  }
+}
+.lime-container {
+  width: 85%;
+  margin:$m3 auto;
+  .card {
+    border: none;
+    margin-right: 10px;
+    position: relative;
+    .heart{
+      position: absolute;
+      top: 20px;
+      right: 20px
+    }
+  }
+  .text {
+    @include flexBox(start, space-between, 0px, row);
+    margin: $m1 0 $m2;
+    .price{
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background-color: $colorF6F6F6;
+      color: $color3C4242;
+    }
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: -0.715px;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: -0.536px;
+      color: #7f7f7f;
+      font-weight: 500;
+    }
+  }
+}
+.feedback-container {
+  width: 85%;
+  margin:$m4 auto;
+  .card {
+    border-radius: 10px;
+    height: 100%;
+    border: 1.8px solid #BEBCBD;
+    background: #FFF;
+    padding: 23.194px;
+    &-head{
+      @include flexBox(start,space-between,10px ,row);
+      margin-bottom: $m1;
+    }
+    &-texts{
+      h5{
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0.44px;
+        color: $color3C4242;
+        margin: $m1 0;
+
+      }
+      p{
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.28px;
+        color: $color807D7E;
+      }
+    }
+
+  }}

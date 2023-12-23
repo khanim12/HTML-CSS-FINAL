@@ -1,0 +1,47 @@
+footer{
+    background-color: $color3C4242;
+    .footer-container{
+        width: 75%;
+        margin: auto;
+        color: $colorFFF;
+        padding: $p4 0;
+        &-head{
+            p{
+                font-size: 24px;
+                font-weight: 700;
+            }
+            li{
+                font-size: 15px;
+                font-weight: 500;
+                margin-top: $m1;
+                color: $colorF6F6F6;
+            }
+        }
+        &-app{
+            width: 83%;
+            margin:$m2 auto;
+            @include flexBox(center,space-between,10px,row);
+            &-right{
+                &-app{
+                    @include flexBox(center, space-between,10px,row);
+                    margin-top: $m2;
+                }
+               
+            }
+        }
+        &-border{
+            @include flexBox(center,space-between,10px,row);
+            border-bottom: 1px solid $colorBEBCBD ;
+          
+            border-top: 1px solid $colorBEBCBD ;
+            padding: $p2 0;
+
+        }
+        &-end{
+            text-align: center;
+            padding-top: $p2;
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}

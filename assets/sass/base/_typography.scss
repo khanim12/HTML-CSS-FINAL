@@ -3,6 +3,11 @@ h3{
     @include typo(500,32px,$colorFFF);
     letter-spacing: 0.157px;
 }
+.h3-dark{
+    @include typo(600,34px,black);
+    letter-spacing: 0.68px;
+
+}
 h4{
     @include typo(600,28px,$colorFFF);
     letter-spacing: 0.56px;
@@ -21,5 +26,13 @@ h4{
     #active{
         @include typo(700,22px,$color3C4242);
   
+    }
+}
+
+.head{
+    @include flexBox(center, start, 25px, row);
+    margin-bottom: $m3;
+    h3 {
+      color: black;
     }
 }

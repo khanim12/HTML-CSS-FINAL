@@ -1,0 +1,202 @@
+header {
+  border-bottom: 1px solid $colorBEBCBD;
+}
+.sidebar-container {
+  width: 80%;
+  margin: auto;
+
+  @include flexBox(start, center, 50px, row);
+  .card {
+    border: none;
+    margin-right: 10px;
+    position: relative;
+    .heart {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  .text {
+    @include flexBox(start, space-between, 0px, row);
+    margin: $m1 0 $m2;
+    .price {
+      font-size: 14px;
+      font-weight: 700;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background-color: $colorF6F6F6;
+      color: $color3C4242;
+    }
+    h5 {
+      font-size: 14px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      letter-spacing: -0.536px;
+      color: #7f7f7f;
+      font-weight: 500;
+    }
+  }
+  &-left {
+    padding: 20px;
+    border-radius: 0px 0px 2px 2px;
+    border-right: 1px solid #bebcbd;
+    border-bottom: 1px solid #bebcbd;
+    border-left: 1px solid #bebcbd;
+
+    text-align: left;
+    &-filter {
+      @include flexBox(start, space-between, 10px, row);
+      margin-bottom: $m3;
+      h5 {
+        font-weight: 600;
+        color: $color807D7E;
+        font-size: 22px;
+        letter-spacing: 0.44px;
+      }
+    }
+    &-first {
+      ul {
+        margin-left: -20px;
+        margin-bottom: $m3;
+        border-bottom: 1px solid $colorBEBCBD;
+        border-top: 1px solid $colorBEBCBD;
+
+        li {
+          font-size: 16px;
+          font-weight: 600;
+          color: #8a8989;
+          margin-bottom: $m1;
+        }
+      }
+    }
+    &-colors {
+      .card {
+        width: 100%;
+      }
+      .empty {
+        width: 36.729px;
+        height: 36.729px;
+        border-radius: 12px;
+      }
+
+      p {
+        font-size: 10px;
+        width: 100%;
+        font-weight: 500;
+        color: #8a8989;
+        margin-top: $m1;
+        text-align: center;
+      }
+      &-color {
+        @include flexBox(center, space-between, 10px, row);
+        margin-bottom: $m3;
+        h5 {
+          font-weight: 600;
+          color: $color3C4242;
+          font-size: 22px;
+          letter-spacing: 0.44px;
+        }
+      }
+    }
+    &-sizes {
+      padding-bottom: $m1;
+      &-size {
+        margin: $m3 0;
+        @include flexBox(start, space-between, 10px, row);
+        border-top: 1px solid $colorBEBCBD;
+        border-bottom: 1px solid $colorBEBCBD;
+        padding: $p1 0;
+      }
+      .card {
+        border-radius: 8px;
+        border: 1px solid #bebcbd;
+        width: 61px;
+        padding: 5px 17px;
+        text-align: center;
+
+        height: 32px;
+        p {
+          font-size: 14px;
+          font-weight: 600;
+          color: $color3C4242;
+        }
+      }
+    }
+  }
+  &-right {
+    &-head {
+      @include flexBox(center, space-between, 10px, row);
+      margin: $m2 0;
+
+      h5 {
+        font-size: 22px;
+        font-weight: 500;
+      }
+      .new {
+        font-size: 22px;
+        font-weight: 500;
+        color: $color8A33FD;
+      }
+      &-group {
+        @include flexBox(center, center, 10px, row);
+      }
+    }
+  }
+}
+.online-container {
+  width: 80%;
+  margin: $m2 auto;
+
+  &-text {
+    h5 {
+      color: $color807D7E;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      margin-bottom: $m2;
+    }
+    p {
+      color: $color807D7E;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.4px;
+      margin: $m2 0;
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}
+.price-container {
+  width: 80%;
+  margin: $m5 auto;
+
+  table {
+    border-radius: 12px;
+    padding: 10px;
+
+    background: #f6f6f6;
+    thead {
+      th {
+        border-bottom: 1px solid $colorBEBCBD;
+      }
+    }
+    tbody {
+      td {
+        text-align: center;
+      }
+      tr {
+        color: $color807D7E;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 0.48px;
+        padding: 20px;
+      }
+      th {
+        border-right: 1px solid $colorBEBCBD;
+      }
+    }
+  }
+}

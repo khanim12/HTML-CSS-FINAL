@@ -1,4 +1,32 @@
 .btn-white{
     @include btn($colorFFF,black, 16px 72px,8px);
     margin-top: $m2;
+    text-transform: capitalize;
+}
+.button-white{
+    @include btn(transparent,$colorFFF, 12px 28px,4px,1px solid $colorFFF
+    )
+}
+.button-dark{
+    @include btn(transparent,black, 12px 28px,4px,1px solid black
+    )
+}
+.button-purple{
+    @include btn($color8A33FD,$colorFFF,12px 40px,8px);
+}
+.border-purple{
+    @include btn($colorFFF,$color8A33FD,12px 40px,8px,1px solid $color8A33FD);
+
+}
+
+.btn-dark{
+    @include btn($colorFFF,black, 10px 50px,8px,1px solid #3C4242);
+
+    text-transform: capitalize;
+}
+.dark{
+    @include btn($color3C4242,$colorFFF,13px 13px,8px);
+    font-size: 12px;
+    font-weight: 700;
+ 
 }
