@@ -1,31 +1,36 @@
-nav{
-    width: 80%;
-    margin: auto;
-    padding: $p2 0;
-    @include flexBox(center,space-between,10px,row);
-    .nav-link{
-        ul{
-            @include flexBox(center,center,25px,row)
+nav {
+  width: 80%;
+  margin: auto;
+  padding: $p2 0;
+  @include flexBox(center, space-between, 10px, row);
+  .nav-logo {
+    .icon {
+      display: none;
+    }
+  }
+  .nav-link {
+    ul {
+      @include flexBox(center, center, 25px, row);
+    }
+  }
+  .nav-search {
+    padding: 12px 20px;
+    border-radius: 8px;
+    background-color: $colorF6F6F6;
+    i {
+      color: $color807D7E;
+    }
+    input {
+      border: none;
+      background-color: transparent;
+      margin-left: $m1;
+      @include typo(400, 16px, $color807D7E);
+    }
+  }
+  .nav-icons {
+    img {
+      margin-right: 10px;
+    }
+  }
+}
 
-        }
-    }
-    .nav-search{
-        padding: 12px 20px;
-        border-radius: 8px;
-        background-color: $colorF6F6F6;
-i{
-    color: $color807D7E;
-}
-        input{
-            border: none;
-            background-color: transparent;
-            margin-left: $m1;
-            @include typo(400,16px,$color807D7E);
-        }
-    }
-    .nav-icons{
-        img{
-            margin-right: 10px;
-        }
-    }
-}

@@ -5,8 +5,8 @@
 
   .carousel-caption {
     position: absolute;
-    top: 90px;
-    left: 190px;
+    top: 10%;
+    left: 10%;
     width: 40%;
     text-align: left;
 
@@ -26,10 +26,11 @@
   }
   &-card {
     width: 50%;
-    height: 500px;
     border-radius: 16px;
     text-align: left;
     padding: $p3;
+    background-size: cover;
+    background-position: center;
     a {
       color: 20px;
       font-weight: 800;
@@ -64,6 +65,10 @@
   }
   &-cards {
     @include flexBox(center, space-between, 10px, row);
+    overflow-x: scroll;
+    &::-webkit-scrollbar{
+      display: none;
+    }
   }
   &-card {
     p {
@@ -85,8 +90,7 @@
       color: black;
     }
   }
-  //   &-cards {
-  //   }
+
   .card {
     background-repeat: no-repeat;
     width: 100%;
@@ -101,7 +105,6 @@
     .icons {
       @include flexBox(end, center, 10px, column);
       svg {
-        // margin-right: 50px;
         margin: $m1 50px $m1 0;
       }
     }
@@ -118,16 +121,19 @@
     width: 60%;
     margin-right: auto;
     .icons {
-      @include flexBox(end, center, 10px, column);
+      @include flexBox(start, center, 10px, column);
+      text-align: center;
       margin-right: 20px;
       svg {
-        margin-right: 110px;
+        text-align: center;
       }
     }
   }
   .card {
     border: none;
     border-radius: 8px;
+    background-size: cover;
+
   }
   .card1 {
     background-image: url(/assets/images/Rectangle\ 74.png);
@@ -323,7 +329,7 @@
   }
   &-photos{
     @include flexBox(center,center,25px,row);
-    margin: $m3 0;
+    margin: $m3 $m1;
     div{
       background-color: $colorFFF;
       padding: 8px 24px;

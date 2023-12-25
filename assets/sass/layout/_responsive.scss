@@ -1,0 +1,91 @@
+@media (max-width: 992px) {
+    .btn-white {
+        @include btn($colorFFF, black, 12px 42px, 8px);
+        margin-top: $m1;
+        text-transform: capitalize;
+        font-size: 16px;
+      }
+  .nav-link {
+    display: none;
+  }
+  .nav-logo {
+    @include flexBox(center, center, 10px, row);
+    .icon {
+      display: block !important;
+    }
+  }
+  .nav-search {
+    display: none;
+  }
+
+  .carousel-container {
+    h1 {
+      font-size: 30px !important;
+    }
+    h3 {
+      font-size: 20px;
+    }
+    
+  }
+  .group-container {
+    @include flexBox(center, center, 0px, column);
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 15px;
+    }
+
+  }
+}
+@media (max-width: 768px) {
+  .under-carousel {
+    &-cards {
+      flex-wrap: wrap;
+    }
+    &-card {
+      width: 100% !important;
+    }
+  }
+  .brand-container {
+    &-photos
+{
+    flex-wrap: wrap;
+
+}
+  }
+  footer{
+    .footer-container{
+        &-app{
+            &-right{
+                &-app{
+                    @include flexBox(center, space-between,10px,column);
+                    margin-top: $m2;
+                }
+               
+            }
+    
+        }
+    }
+ 
+  }
+ 
+}
+
+@media (max-width: 575px) {
+  .carousel-container {
+    h1 {
+      font-size: 20px !important;
+      margin: $m1 auto !important;
+    }
+    h3 {
+      font-size: 15px;
+    }
+    .btn-white {
+      @include btn($colorFFF, black, 12px 42px, 8px);
+      margin-top: $m1;
+      text-transform: capitalize;
+      font-size: 12px;
+    }
+  }
+}

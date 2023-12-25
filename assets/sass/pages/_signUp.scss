@@ -6,9 +6,10 @@
 .signUp-container {
   width: 100%;
   height: 100%;
-  .container {
-    width: 100%;
-  }
+  
+.row > *{
+  padding: 0 !important;
+}
   .card-right {
     padding: $p2;
   }
@@ -81,28 +82,28 @@
       }
       .drow {
         @include flexBox(center, space-between, 10px, row);
-        .eye{
-            span{
-                color: #807D7E;
-text-align: right;
-font-size: 18px;
-font-weight: 400;
-margin-left: 10px;
-            }
+        .eye {
+          span {
+            color: #807d7e;
+            text-align: right;
+            font-size: 18px;
+            font-weight: 400;
+            margin-left: 10px;
+          }
         }
       }
     }
-    &-bottom{
-        p{
-            margin-top: 10px;
-            color: #3C4242;
-font-size: 16px;
-font-weight: 400;
-a{
-    text-decoration-line: underline;
-color: #3C4242;
-}
+    &-bottom {
+      p {
+        margin-top: 10px;
+        color: #3c4242;
+        font-size: 16px;
+        font-weight: 400;
+        a {
+          text-decoration-line: underline;
+          color: #3c4242;
         }
+      }
     }
   }
 }
