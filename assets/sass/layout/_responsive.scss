@@ -88,4 +88,24 @@
       font-size: 12px;
     }
   }
+  footer{
+    .footer-container{
+        &-app{
+          @include flexBox(center,center,10px,column);
+          // &-img{
+          //   width: 20%;
+          // }
+          //   &-right{
+          //       &-app{
+          //           @include flexBox(center, space-between,10px,column);
+          //           margin-top: $m2;
+          //           width: 20%;
+          //       }
+               
+          //   }
+    
+        }
+    }
+ 
+  }
 }

@@ -1408,4 +1408,11 @@ header {
     text-transform: capitalize;
     font-size: 12px;
   }
+  footer .footer-container-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
